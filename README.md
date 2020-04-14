@@ -14,10 +14,6 @@ find_shop
 - 現在地からの半径を指定することによってユーザの移動も考えた
 システム設計を目指しました。
 
-
-### 該当プロジェクトのリポジトリ URL（GitHub,GitLab など Git ホスティングサービスを利用されている場合）
-https://github.com/aokiyuyatsuyoshi/fashionable_find_shop_ver2.0
-
 ## 開発環境
 ### 開発環境
 Version 11.3.1

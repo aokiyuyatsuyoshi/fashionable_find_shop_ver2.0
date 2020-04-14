@@ -52,9 +52,10 @@ class ViewController: UIViewController,CLLocationManagerDelegate{
     //上記の配列から距離を代入する
     var selected_distance : Int = 0
     //https://qiita.com/wadaaaan/items/0de9bc4ee40c8fbf38f1参考
-    func shop_list(shop : String){
+    func shop_list(shop : String)->String{
         let urlString : String =  shop.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
         selected_shop = urlString
+        return urlString
     }
     
     //https://qiita.com/polunga/items/8cf8d10c5a9544091548参考
@@ -73,7 +74,8 @@ class ViewController: UIViewController,CLLocationManagerDelegate{
         //結果画面に配置する画像を決める。
         decide_picture()
         //下記に記載　selected_shopとselected_distanceの値を決める。
-        decide_shop_distance()
+        decide_shop()
+        decide_distance()
         //店が選択されていない場合必ずHTTP通信が失敗するようにする。
         if(selected_shop==""){
             selected_shop = "%%&"
@@ -127,7 +129,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate{
         }
     }
     //選択した店
-    func decide_shop_distance(){
+    func decide_shop()->String{
         //店を設定
         var i : Int = 0
         while i < japanese_shop_array.count{
@@ -137,6 +139,11 @@ class ViewController: UIViewController,CLLocationManagerDelegate{
             }
             i = i + 1
         }
+        
+        return shop_label.text!
+    }
+    //選択した距離
+    func decide_distance()->String{
         //距離を設定
         var j : Int = 0
         while j < distance_array.count{
@@ -146,6 +153,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate{
             }
             j = j + 1
         }
+        return select_distance_label.text!
     }
     //選択した店舗の画像を表示
     func decide_picture(){

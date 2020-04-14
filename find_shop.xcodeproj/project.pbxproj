@@ -14,8 +14,19 @@
 		241F40132427E117001547F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 241F40112427E117001547F6 /* LaunchScreen.storyboard */; };
 		241F40A124323DD7001547F6 /* Top_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F40A024323DD7001547F6 /* Top_ViewController.swift */; };
 		248FA4C4243B3C2900DDA084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 248FA4C3243B3C2900DDA084 /* Assets.xcassets */; };
+		248FA4F62443576500DDA084 /* find_shopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248FA4F52443576500DDA084 /* find_shopTests.swift */; };
 		D6AB04AF08B7C59E96D6BBF9 /* Pods_find_shop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE5BAF8E5D1EACA1FCDFA3D /* Pods_find_shop.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		248FA4F82443576500DDA084 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 241F3FFB2427E114001547F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 241F40022427E114001547F6;
+			remoteInfo = find_shop;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		241F40032427E114001547F6 /* find_shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = find_shop.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,6 +38,9 @@
 		241F40142427E117001547F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		241F40A024323DD7001547F6 /* Top_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top_ViewController.swift; sourceTree = "<group>"; };
 		248FA4C3243B3C2900DDA084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		248FA4F32443576500DDA084 /* find_shopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = find_shopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		248FA4F52443576500DDA084 /* find_shopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = find_shopTests.swift; sourceTree = "<group>"; };
+		248FA4F72443576500DDA084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CC9D422F51E342D9531E8F2 /* Pods-find_shop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-find_shop.debug.xcconfig"; path = "Target Support Files/Pods-find_shop/Pods-find_shop.debug.xcconfig"; sourceTree = "<group>"; };
 		BFE5BAF8E5D1EACA1FCDFA3D /* Pods_find_shop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_find_shop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEBDD70B71936674C190AB57 /* Pods-find_shop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-find_shop.release.xcconfig"; path = "Target Support Files/Pods-find_shop/Pods-find_shop.release.xcconfig"; sourceTree = "<group>"; };
@@ -41,6 +55,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		248FA4F02443576500DDA084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -48,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				241F40052427E114001547F6 /* find_shop */,
+				248FA4F42443576500DDA084 /* find_shopTests */,
 				241F40042427E114001547F6 /* Products */,
 				B9A08C3812F5A17737A0413B /* Pods */,
 				2AE1167507D992E5BC219214 /* Frameworks */,
@@ -58,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				241F40032427E114001547F6 /* find_shop.app */,
+				248FA4F32443576500DDA084 /* find_shopTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +98,15 @@
 				241F40142427E117001547F6 /* Info.plist */,
 			);
 			path = find_shop;
+			sourceTree = "<group>";
+		};
+		248FA4F42443576500DDA084 /* find_shopTests */ = {
+			isa = PBXGroup;
+			children = (
+				248FA4F52443576500DDA084 /* find_shopTests.swift */,
+				248FA4F72443576500DDA084 /* Info.plist */,
+			);
+			path = find_shopTests;
 			sourceTree = "<group>";
 		};
 		2AE1167507D992E5BC219214 /* Frameworks */ = {
@@ -117,6 +149,24 @@
 			productReference = 241F40032427E114001547F6 /* find_shop.app */;
 			productType = "com.apple.product-type.application";
 		};
+		248FA4F22443576500DDA084 /* find_shopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 248FA4FA2443576500DDA084 /* Build configuration list for PBXNativeTarget "find_shopTests" */;
+			buildPhases = (
+				248FA4EF2443576500DDA084 /* Sources */,
+				248FA4F02443576500DDA084 /* Frameworks */,
+				248FA4F12443576500DDA084 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				248FA4F92443576500DDA084 /* PBXTargetDependency */,
+			);
+			name = find_shopTests;
+			productName = find_shopTests;
+			productReference = 248FA4F32443576500DDA084 /* find_shopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -129,6 +179,10 @@
 				TargetAttributes = {
 					241F40022427E114001547F6 = {
 						CreatedOnToolsVersion = 11.3.1;
+					};
+					248FA4F22443576500DDA084 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 241F40022427E114001547F6;
 					};
 				};
 			};
@@ -146,6 +200,7 @@
 			projectRoot = "";
 			targets = (
 				241F40022427E114001547F6 /* find_shop */,
+				248FA4F22443576500DDA084 /* find_shopTests */,
 			);
 		};
 /* End PBXProject section */
@@ -158,6 +213,13 @@
 				241F40132427E117001547F6 /* LaunchScreen.storyboard in Resources */,
 				248FA4C4243B3C2900DDA084 /* Assets.xcassets in Resources */,
 				241F400E2427E114001547F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248FA4F12443576500DDA084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +296,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		248FA4EF2443576500DDA084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248FA4F62443576500DDA084 /* find_shopTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		248FA4F92443576500DDA084 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 241F40022427E114001547F6 /* find_shop */;
+			targetProxy = 248FA4F82443576500DDA084 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		241F400C2427E114001547F6 /* Main.storyboard */ = {
@@ -406,6 +484,44 @@
 			};
 			name = Release;
 		};
+		248FA4FB2443576500DDA084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = find_shopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "yuya.find-shopTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/find_shop.app/find_shop";
+			};
+			name = Debug;
+		};
+		248FA4FC2443576500DDA084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = find_shopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "yuya.find-shopTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/find_shop.app/find_shop";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -423,6 +539,15 @@
 			buildConfigurations = (
 				241F40182427E117001547F6 /* Debug */,
 				241F40192427E117001547F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		248FA4FA2443576500DDA084 /* Build configuration list for PBXNativeTarget "find_shopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				248FA4FB2443576500DDA084 /* Debug */,
+				248FA4FC2443576500DDA084 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
